@@ -72,8 +72,8 @@ a {
 
 
 .Demo {
-	width: 30%;
-	min-width: 300px;
+	width: 10%;
+	max-width: 300px;
 	display: inline-block;
 	margin: 0 14px;
 	padding-top: 16px;
