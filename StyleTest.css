@@ -18,7 +18,7 @@ body {
 }
 
 header {
-	background-color: yellow;
+	background-color: palegreen;
     width: 100%;
 	height: auto;
 	box-sizing: border-box;
@@ -139,13 +139,13 @@ p {
 
 @media (max-width: 600px){
 	header {
-		background-color: purple;
+		background-color: palevioletred;
 	}
 }
 
-@media (min-width: 601px) and (max-width: 1096px){
+@media (min-width: 500px) and (max-width: 1096px){
 	header {
-		background-color: pink;
+		background-color: palegoldenrod;
 	}
 }
 
