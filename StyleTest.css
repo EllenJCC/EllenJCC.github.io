@@ -33,7 +33,7 @@ h1 {
 	color: White;
 	display: inline-block;
 	font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 400;
 	text-transform: uppercase;
 	width:100px;
@@ -139,13 +139,13 @@ p {
 
 @media (max-width: 600px){
 	header {
-		background-color: red;
+		background-color: purple;
 	}
 }
 
-@media (min-width: 500px) and (max-width: 1096px){
+@media (min-width: 601px) and (max-width: 1096px){
 	header {
-		background-color: orange;
+		background-color: pink;
 	}
 }
 
