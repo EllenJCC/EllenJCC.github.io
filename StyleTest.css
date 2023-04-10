@@ -73,10 +73,12 @@ a {
 
 .Demo {
 	width: 100%;
-	max-width: 300px;
+	min-width: 30%;
+	max-width: 400px;
 	display: inline-block;
 	margin: 0 14px;
 	padding-top: 16px;
+	float: left;
 }
 
 
@@ -120,13 +122,6 @@ p {
 
 
 
-
-
-
-
-
-
-
 .Showreel {
 	width: 80%;
 	background-color: aliceblue;
@@ -141,4 +136,16 @@ p {
 	height: 400px;
 	background-color: gray;
 	display: block;
+}
+
+@media (max-width: 600px){
+	header {
+		background-color: pink;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1150px){
+	header {
+		background-color: green;
+	}
 }
