@@ -21,7 +21,6 @@ header {
 	background-color: black;
     width: 100%;
 	height: auto;
-    z-index: 10;
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0 auto;
@@ -138,14 +137,21 @@ p {
 	display: block;
 }
 
-@media (max-width: 600px){
+@media (max-width: 480px){
 	header {
 		background-color: pink;
 	}
 }
 
-@media (min-width: 600px) and (max-width: 1150px){
+@media (min-width: 481px) and (max-width: 768px){
 	header {
 		background-color: green;
+	}
+}
+
+
+@media (min-width: 769px){
+	header {
+		background-color: orange;
 	}
 }
