@@ -11,9 +11,9 @@
 body {
 	box-sizing: border-box;
 	width: 100%;
-	max width: 1100px;
+	max-width: 1100px;
 	margin: 0 auto;
-	background-color: #blue;
+	background-color: paleturquoise;
 	height: 1000px;
 }
 
@@ -72,8 +72,8 @@ a {
 
 
 .Demo {
-	width: 10%;
-	max-width: 300px;
+	width: 30%;
+	min-width: 300px;
 	display: inline-block;
 	margin: 0 14px;
 	padding-top: 16px;
