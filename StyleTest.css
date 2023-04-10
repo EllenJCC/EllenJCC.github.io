@@ -13,7 +13,7 @@ body {
 	width: 100%;
 	max-width: 1100px;
 	margin: 0 auto;
-	background-color: paleturquoise;
+	background-color: #F7ECF0;
 	height: 1000px;
 }
 
@@ -72,7 +72,7 @@ a {
 
 
 .Demo {
-	width: 30%;
+	width: 100%;
 	min-width: 300px;
 	display: inline-block;
 	margin: 0 14px;
@@ -106,12 +106,39 @@ h5 {
 }
 
 .DemoTitle {
-	width: 300px;
-	height: 40px;
+	width: 90%;
+	height: 50px;
 	padding: 8px 0px 12px 0px;
 }
 
 p {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Showreel {
+	width: 80%;
+	background-color: aliceblue;
+	padding-top: 60px;
+}
+
+
+
+.ShowreelHolder {
+	width: 100%;
+	max-width: 800px;
+	height: 400px;
+	background-color: gray;
+	display: block;
 }
