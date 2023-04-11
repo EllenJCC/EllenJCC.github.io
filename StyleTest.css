@@ -7,6 +7,14 @@
 	box-sizing: border-box;
 }
 
+h6 {
+	font-size: 14px;
+	color: black;
+	display: inline-block;
+}
+#laptop {
+	color: white;
+}
 
 body {
 	box-sizing: border-box;
@@ -18,12 +26,14 @@ body {
 }
 
 header {
-	background-color: green;
-    	width: 100%;
+	background-color: black;
+    width: 100%;
 	height: auto;
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0 auto;
+	text-align: center;
+	z-index: 10;
 }
 
 
@@ -138,15 +148,21 @@ p {
 }
 
 @media (max-width: 600px){
-	header {
-		background-color: red;
-	}
+	#laptop {
+	color: black;
+}
+	#mobile {
+	color: white;
+}
 }
 
-@media (min-width: 601px) and (max-width: 1096px){
-	header {
-		background-color: yellow;
-	}
+@media (min-width: 601px) and (max-width: 980px){
+	#laptop {
+	color: black;
+}
+	#tablet {
+	color: white;
+}
 }
 
 
