@@ -133,18 +133,24 @@ p {
 
 .Showreel {
 	width: 80%;
-	background-color: aliceblue;
-	padding-top: 60px;
+	padding-top: 40px;
 }
 
 
 
 .ShowreelHolder {
-	width: 100%;
-	max-width: 800px;
-	height: 400px;
-	background-color: gray;
-	display: block;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  width: 100%;
+}
+
+.ShowreelHolder iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 600px){
