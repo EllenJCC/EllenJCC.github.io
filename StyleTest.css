@@ -19,7 +19,7 @@ body {
 
 header {
 	background-color: green;
-    width: 100%;
+    	width: 100%;
 	height: auto;
 	box-sizing: border-box;
 	padding: 0px;
@@ -139,13 +139,13 @@ p {
 
 @media (max-width: 600px){
 	header {
-		background-color: palevioletred;
+		background-color: red;
 	}
 }
 
-@media (min-width: 600px) and (max-width: 1096px){
+@media (min-width: 601px) and (max-width: 1096px){
 	header {
-		background-color: palegoldenrod;
+		background-color: yellow;
 	}
 }
 
