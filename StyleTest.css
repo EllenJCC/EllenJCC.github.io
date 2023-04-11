@@ -81,13 +81,10 @@ a {
 
 
 .Demo {
-	width: 100%;
-	min-width: 30%;
-	max-width: 400px;
+	width: 30%;
 	display: inline-block;
 	margin: 0 14px;
 	padding-top: 16px;
-	float: left;
 }
 
 
@@ -160,6 +157,12 @@ p {
 	#mobile {
 	color: white;
 }
+	
+	
+	
+	.Demo {
+		width: 90%;
+	}
 }
 
 @media (min-width: 601px) and (max-width: 980px){
@@ -169,6 +172,13 @@ p {
 	#tablet {
 	color: white;
 }
+	
+	
+	
+	
+	.Demo {
+		width: 45%;
+	}
 }
 
 
