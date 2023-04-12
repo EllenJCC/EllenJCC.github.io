@@ -8,6 +8,7 @@
 	box-sizing: border-box;
 }
 
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -25,17 +26,18 @@ h6 {
 body {
 	box-sizing: border-box;
 	width: 100%;
-	max-width: 1100px;
 	margin: 0 auto;
-	background-color: #F7ECF0;
+	padding: 0px;
+	background-color: #FFF2FB;
 	height: 1000px;
+	left: 0;
+	right: 0;
 }
 
 header {
 	background-color: black;
     width: 100%;
 	height: auto;
-	box-sizing: border-box;
 	padding: 0px;
 	margin: 0 auto;
 	text-align: center;
@@ -89,15 +91,13 @@ h2 {
 	margin: 0 14px;
 	padding-top: 16px;
 }
-
-
 .ImagePlaceholder {
 	width: 100%;
 	height: 150px;
 	background-color: #321250;
 }
 
-h4 {
+.Demo h4, .workPreviewTitle h4 {
 	font-family: 'Varela Round', sans-serif;
 	text-transform: uppercase;
 	font-size: 24px;
@@ -106,7 +106,7 @@ h4 {
 	left: 0px;
 }
 
-h5 {
+.Demo h5, .workPreviewTitle h5 {
 	font-family: 'Varela Round', sans-serif;
 	font-size: 14px;
 	float: right;
@@ -135,9 +135,6 @@ p {
 	width: 80%;
 	padding-top: 40px;
 }
-
-
-
 .ShowreelHolder {
   position: relative;
   padding-bottom: 56.25%;
@@ -145,13 +142,80 @@ p {
   width: 100%;
 }
 
-.ShowreelHolder iframe {
+
+
+
+
+iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
+
+
+
+
+.workPreview {
+	width: 33%;
+	display: inline-block;
+}
+.workPreviewTitle {
+	width: 90%;
+	height: 50px;
+	padding: 8px 0px 12px 0px;
+}
+.placeholderImage {
+	width: 100%;
+	height: 150px;
+	background-color: plum;
+}
+
+
+
+.workFullsize {
+	color: white;
+    background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+  	bottom: 0;
+    left: 0;
+    right: 0;
+	visibility: hidden;
+}
+.workFullsize:target {
+	visibility: visible;
+}
+.workFullContent {
+	margin-top: 100px;
+	width: 90%;
+	background-color: plum;
+	text-align: left;
+}
+.workVideo {
+	width: 70%;
+	background-color: orange;
+	padding: 24px;
+	display: inline-block;
+	text-align: left;
+}
+.workVideoHolder {
+	width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.workFullsize h5 {
+	color: paleturquoise;
+}
+
+.close {
+	float: right;
+	font-size: 50px;
+	padding: 0px;
+}
+
+
 
 @media (max-width: 600px){
 	#laptop {
@@ -160,9 +224,6 @@ p {
 	#mobile {
 	color: white;
 }
-	
-	
-	
 	.Demo {
 		width: 90%;
 	}
@@ -176,106 +237,7 @@ p {
 	color: white;
 }
 	
-	
-	
-	
 	.Demo {
 		width: 45%;
 	}
-}
-
-
-
-
-
-.workPreview {
-	width: 33%;
-	display: inline-block;
-}
-
-.workPreviewTitle {
-	width: 90%;
-	height: 50px;
-	padding: 8px 0px 12px 0px;
-}
-
-.placeholderImage {
-	width: 100%;
-	height: 150px;
-	background-color: plum;
-}
-
-
-
-.workPop {
-	color: white;
-	background-color: green;
-	width: 100%;
-	height: 50px;
-	visibility: hidden;
-}
-
-.workPop:target {
-	visibility: visible;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
 }
