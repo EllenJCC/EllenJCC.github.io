@@ -8,6 +8,11 @@
 	box-sizing: border-box;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
 h6 {
 	font-size: 14px;
 	color: black;
@@ -73,10 +78,7 @@ h2 {
 	display: block;
 }
 
-a {
-	color: white;
-	text-decoration: none;
-}
+
 
 
 
@@ -186,11 +188,48 @@ p {
 
 
 
-
-
-a {
-	color: red;
+.workPreview {
+	width: 33%;
+	display: inline-block;
 }
+
+.workPreviewTitle {
+	width: 90%;
+	height: 50px;
+	padding: 8px 0px 12px 0px;
+}
+
+.placeholderImage {
+	width: 100%;
+	height: 150px;
+	background-color: plum;
+}
+
+
+
+.workPop {
+	color: white;
+	background-color: green;
+	width: 100%;
+	height: 50px;
+	visibility: hidden;
+}
+
+.workPop:target {
+	visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .overlay {
