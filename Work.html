@@ -1,91 +1,314 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Work</title>
-<style type="text/css">
-@import url("StyleTest.css");
-</style>
-</head>
-	
-	
-	
-	
-<header class="navBar">
-	<h1><a href="index.html">Home</a></h1>
- 	<h1><a href="Work.html">Work</a></h1>
-  	<h1><a href="About.html">About</a></h1>
-	<h6 id="mobile">Mobile</h6>
-	<h6 id="tablet">Tablet</h6>
-	<h6 id="laptop">Laptop</h6>
-</header>
-	
-	
-<body>
+@charset "UTF-8";
 
+
+* {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-align: justify;
+}
+
+/*temp*/
+h6 {
+	font-size: 14px;
+	color: black;
+	display: inline-block;
+}
+
+#laptop {
+	color: white;
+}
+
+body {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+	background-color: #FFF2FB;
+	left: 0;
+	right: 0;
+}
+
+header {
+	background-color: black;
+    width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 10;
+}
+
+
+
+
+.navBar h1 {
+	color: White;
+	display: inline-block;
+	font-family: 'Varela Round', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+	text-transform: uppercase;
+	width:100px;
+	background-color: black;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.navBar h1:hover {
+	color: white;
+	font-weight: 800;
+}
+
+h2 {
+	font-family: 'Varela Round', sans-serif;
+    font-size: 36px;
+	font-weight: 200;
+	text-transform: underline;
+	padding: 40px;
+}
+
+
+/* Front page specific */
+.frontImage {
+	background-color: #C4ADEB;
+	height: 400px;
+	display: block;
+}
+.Showreel {
+	width: 80%;
+	padding-top: 40px;
+}
+.ShowreelHolder {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  width: 100%;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+#previews {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* Work Previews */
+.workPreview {
+	width: 30%;
+	margin: 10px 10px;
+}
+.workThumbnail {
+  max-width: 1920px;
+  max-height: 1080px;
+  width: 100%;
+  height: auto;
+}
+.workPreviewTitle {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.4em;
+	padding: 8px 0px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+.workVideo {
+	width: 70%;
+	background-color: antiquewhite;
+	text-align: left;
+	float: left;
+	margin: 14px;
+}
+
+.gallerySpace {
+	width: 70%;
+	text-align: left;
+	float: left;
+	margin: 14px;
+}
+
+.workFullsize {
+	color: white;
+    background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+  	bottom: 0;
+    left: 0;
+    right: 0;
+	visibility: hidden;
+	width: 100%;
+}
+.workFullsize:target {
+	visibility: visible;
+}
+.workFullContent {
+	margin-top: 30px;
+	background-color: white;
+	display: inline-block;
+	width: 90%;
+	position: relative;
+}
+.workFullText {
+	width: 25%;
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%) translateX(295%);
+	font-family: 'Varela Round', sans-serif;
+	margin-right: 14px;
+}
+.close {
+	font-size: 50px;
+	z-index: 10;
+	color: black;
+	margin-right: 14px;
+	float: right;
+}
+
+
+.workTitle {
+	text-transform: uppercase;
+	color: black;
+	font-size: 1.4em;
+	text-align: left;
+	padding: 6px 0px;
+}
+.workMedium {
+	color: grey;
+	text-transform: uppercase;
+	text-align: left;
+	padding-bottom: 6px;
+}
+
+.workDate {
+	color: grey;
+	text-align: left;
+	padding-bottom: 6px;
+}
+.workDes {
+	color:black;
+	text-align: left;
 	
-	<div class="workPreview"> 
-		
-		<a href="#pop1">
-			
-		<img class="workThumbnail" src="docs/assets/caterpillarGreen.png" alt="Caterpillar"/>
-			
-		<div class="workPreviewTitle">
-	  		<h4>Work Title</h4>
-			<h5>Information</h5>
-		</div>
-		<p>Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut eget purus luctus, varius elit nec, molestie ipsum.</p>
-		</a>
-	</div>
+}
+
+
+@media (max-width: 600px){
+	#laptop {
+	color: black;
+}
+	#mobile {
+	color: white;
+}
+	.workPreview {
+		width: 90%;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 980px){
+	#laptop {
+	color: black;
+}
+	#tablet {
+	color: white;
+}
 	
-	<div class="workPreview"> 
-		<a href="#pop1">
-		<img class="workThumbnail" src="docs/assets/CaterpillarRed.png" alt="CaterpillarRed"/>
-		<div class="workPreviewTitle">
-	  		<h4>Work Title</h4>
-			<h5>Information</h5>
-		</div>
-		<p>Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut eget purus luctus, varius elit nec, molestie ipsum.</p>
-		</a>
-	</div>
-	
-	<div class="workPreview"> 
-		<a href="#pop1">
-		<img class="workThumbnail" src="docs/assets/caterpillarGreen.png" alt="CaterpillarGreen"/>
-		<div class="workPreviewTitle">
-	  		<h4>Work Title</h4>
-			<h5>Information</h5>
-		</div>
-		<p>Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut eget purus luctus, varius elit nec, molestie ipsum.</p>
-		</a>
-	</div>
-	
-	
-	
-	
-	
-	<div id="pop1" class="workFullsize">
-		<div class="workFullContent">
-			<video>
-				<source src="../../Desktop/Instagram.mp4">
-			</video>
-			
-			
-			<a class="close" href="#">&times;</a> 
-			
-			<div class="workFullText">
-				<h4 class="workTitle">Metamorphosis is the title</h4>
-				<h5 class="workMedium">3D Animation on filmed footage</h5>
-				<h5 class="workDate">2022</h5>
-				<p class="workDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet. Amet consectetur adipiscing elit pellentesque habitant. </p>
-			</div>
-			
-			
-		</div>
-	</div>
-	
-	
-</body>
-</html>
+	.workPreview {
+		width: 45%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mySlides {display: none}
+
+/* gallery container */
+.gallery-container {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.active, .dot:hover {
+  background-color: #636363;
+}
+
