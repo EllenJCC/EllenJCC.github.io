@@ -35,7 +35,8 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0px;
-	background-color: #FFF2FB;
+	background-color: white;
+	
 	left: 0;
 	right: 0;
 }
@@ -139,7 +140,21 @@ iframe {
 
 
 
+.workFullsize {
+	color: white;
+    background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+  	bottom: 0;
+    left: 0;
+    right: 0;
+	visibility: hidden;
+	width: 100%;
+}
 
+.workFullsize:target {
+	visibility: visible;
+}
 
 .workVideo {
 	width: 70%;
@@ -156,20 +171,8 @@ iframe {
 	margin: 14px;
 }
 
-.workFullsize {
-	color: white;
-    background: rgba(0, 0, 0, 0.4);
-	position: fixed;
-	top: 0;
-  	bottom: 0;
-    left: 0;
-    right: 0;
-	visibility: hidden;
-	width: 100%;
-}
-.workFullsize:target {
-	visibility: visible;
-}
+
+
 .workFullContent {
 	margin-top: 30px;
 	background-color: white;
@@ -230,6 +233,40 @@ iframe {
 	.workPreview {
 		width: 90%;
 	}
+	
+	
+	.workVideo {
+		width: 95%;
+		float: none;
+		opacity: 0.5;
+		display: inline-block;
+		text-align: center;
+	}
+	
+	.workFullText {
+		width: 95%;
+		text-align: center;
+		position: relative;
+		display: block;
+		top: 0%;
+		transform: translateY(0%) translateX(0%);
+		font-family: 'Varela Round', sans-serif;
+		margin: 14px;
+		margin-top: -10px;
+	}
+	
+	.workTitle, .workMedium,.workDate, .workDes {
+		text-align: center;
+	}
+	
+	.workMedium, .workDate {
+		display: inline-block;
+	}
+	.close {
+		display: none;
+	}
+	
+	
 }
 
 @media (min-width: 601px) and (max-width: 980px){
@@ -243,8 +280,38 @@ iframe {
 	.workPreview {
 		width: 45%;
 	}
+	
+	.workVideo {
+		width: 95%;
+		float: none;
+		opacity: 0.5;
+		display: inline-block;
+		text-align: center;
+	}
+	
+	.workFullText {
+		width: 95%;
+		text-align: center;
+		position: relative;
+		display: block;
+		top: 0%;
+		transform: translateY(0%) translateX(0%);
+		font-family: 'Varela Round', sans-serif;
+		margin: 14px;
+		margin-top: -10px;
+	}
+	
+	.workTitle, .workMedium,.workDate, .workDes {
+		text-align: center;
+	}
+	
+	.workMedium, .workDate {
+		display: inline-block;
+	}
+	.close {
+		display: none;
+	}
 }
-
 
 
 
