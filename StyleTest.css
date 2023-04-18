@@ -88,11 +88,12 @@ h2 {
 	display: block;
 }
 .Showreel {
-	width: 80%;
-	padding-top: 40px;
+	width: 70%;
+	height: 100px;
+	padding: 14px;
+	background: pink;
 }
 .ShowreelHolder {
-  position: relative;
   padding-bottom: 56.25%;
   height: 0;
   width: 100%;
@@ -182,7 +183,6 @@ iframe {
 	top: 50%;
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
-	min-height: 400px;
 	
 	
 }
@@ -286,14 +286,12 @@ iframe {
 		position: absolute;
 		font-size: 22px;
 		color: white;
-		right: 10px;
-		top: 2px;
+		right: 26px;
+		top: 12px;
 		width: 38px;
 		height: 38px;
 		padding: 8px;
 		margin: 10px 0px;
-		border-radius: 60px 60px 60px 60px;
-		background: rgba(0, 0, 0, 0.4);
 	}
 	
 	
@@ -348,8 +346,6 @@ iframe {
 		height: 38px;
 		padding: 8px;
 		margin: 10px 0px;
-		border-radius: 60px 60px 60px 60px;
-		background: rgba(0, 0, 0, 0.4);
 	}
 	
 	
@@ -374,7 +370,7 @@ iframe {
 
 
 
-.mySlides {display: none}
+.mySlides, .mySlides2, .mySlides3 {display: none}
 
 /* gallery container */
 .gallery-container {
@@ -407,7 +403,7 @@ iframe {
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-.dot {
+.dot, .dot2, .dot3 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -417,7 +413,11 @@ iframe {
   border-radius: 50%;
   display: inline-block;
 }
-.active, .dot:hover {
+.active, .dot:hover, .dot2:hover, .dot3:hover {
   background-color: #636363;
 }
+
+
+
+
 
