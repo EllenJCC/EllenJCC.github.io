@@ -17,9 +17,6 @@
 	<h1><a href="index.html">Home</a></h1>
  	<h1><a href="Work.html">Work</a></h1>
   	<h1><a href="About.html">About</a></h1>
-	<h6 id="mobile">Mobile</h6>
-	<h6 id="tablet">Tablet</h6>
-	<h6 id="laptop">Laptop</h6>
 </header>
 	
 	
@@ -28,6 +25,7 @@
 	<br>
 	
 	<div id="previews">
+		<!-- Metamorphosis -->
 		<div class="workPreview"> 
 			<a href="#Metamorphosis">
 			<img class="workThumbnail" src="docs/assets/workThumbnails/Metamorphosis.png" alt="Metamorphosis"/>
@@ -39,6 +37,7 @@
 			</a>
 		</div>
 
+		<!-- Destruction -->
 		<div class="workPreview"> 
 			<a href="#popup2">
 			<img class="workThumbnail" src="docs/assets/workThumbnails/FlowerMelt.png" alt="Destruction"/>
@@ -50,6 +49,7 @@
 			</a>
 		</div>
 
+		<!-- Placeholder -->
 		<div class="workPreview"> 
 			<a href="#popup3">
 			<img class="workThumbnail" src="docs/assets/placeholder.png" alt=""/>
@@ -61,6 +61,7 @@
 			</a>
 		</div>
 	
+		<!-- Lumen -->
 		<div class="workPreview"> 
 			<a href="#Lumen">
 			<img class="workThumbnail" src="docs/assets/workThumbnails/LumenPrints.png" alt="LumenPrints"/>
@@ -72,17 +73,19 @@
 			</a>
 		</div>
 
+		<!-- Thumbelina -->
 		<div class="workPreview"> 
-			<a href="#Pandas">
-			<img class="workThumbnail" src="docs/assets/workThumbnails/PandaAnimation.png" alt="Panda Animation"/>
+			<a href="#Thumbelina">
+			<img class="workThumbnail" src="docs/assets/workThumbnails/Thumbelina.png" alt="Thumbelina"/>
 			<div class="workPreviewTitle">
-				<h4>Panda Cubs</h4>
-				<h5>2d Animation</h5>
+				<h4>Thumbelina</h4>
+				<h5>Film and 3D Animation</h5>
 			</div>
-			<p>Short animation of 2 panda cubs, made in Procreate and Adobe After Effects.</p>
+			<p>HSC Multimedia Majorwork, based on the folk tale Thumbelina.</p>
 			</a>
 		</div>
 
+		<!-- Flower Timelapse -->
 		<div class="workPreview"> 
 			<a href="#Timelapse">
 			<img class="workThumbnail" src="docs/assets/workThumbnails/FlowerTimelapse.png" alt="Flower Timelapse"/>
@@ -94,6 +97,19 @@
 			</a>
 		</div>
 		
+		<!-- Pandas -->
+		<div class="workPreview"> 
+			<a href="#Pandas">
+			<img class="workThumbnail" src="docs/assets/workThumbnails/PandaAnimation.png" alt="Panda Animation"/>
+			<div class="workPreviewTitle">
+				<h4>Panda Cubs</h4>
+				<h5>2d Animation</h5>
+			</div>
+			<p>Short animation of 2 panda cubs, made in Procreate and Adobe After Effects.</p>
+			</a>
+		</div>
+		
+		<!-- Hypnosis -->
 		<div class="workPreview"> 
 			<a href="#Hypnosis">
 			<img class="workThumbnail" src="docs/assets/workThumbnails/Hypnosis.png" alt="Hypnosis"/>
@@ -105,6 +121,7 @@
 			</a>
 		</div>
 		
+		<!-- Portal -->
 		<div class="workPreview"> 
 			<a href="#VFXPortal">
 			<img class="workThumbnail" src="docs/assets/workThumbnails/ThePortal.png" alt="The Portal"/>
@@ -117,7 +134,16 @@
 		</div>
 		
 		
+		
+		
 	</div>
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -126,18 +152,14 @@
 	
 	<!-- METAMORPHOSIS -->
 	<div id="Metamorphosis" class="workFullsize">
-		<a class="workEsc" href=""></a>
+		<a onclick="pauseVid()" class="workEsc" href=""></a>
 		<div class="workFullContent">
-			
-			
-			
-			
 			
 			
 			<div class="gallerySpace">
 				<div class="gallery-container">
 				<div class="mySlides3">
-				  <video class="galleryVideo"  width="100%" controls>
+				  <video class="galleryVideo" id="vMetamorphosis" width="100%" webkit-playsinline playsinline controls>
 						<source src="docs/assets/workFullsize/Metamorphosis.mp4">
 				  </video>
 				</div>
@@ -159,8 +181,8 @@
 				<div class="mySlides3">
 				  <img src="docs/assets/workFullsize/Metamorphosis6.png" alt="" style="width:100%">
 				</div>
-				<a class="prev" onclick="plusSlides3(-1)">❮</a>
-				<a class="next" onclick="plusSlides3(1)">❯</a>
+				<a class="prev" onclick="plusSlides3(-1); pauseVid()">❮</a>
+				<a class="next" onclick="plusSlides3(1); pauseVid()">❯</a>
 				</div>
 				<br>
 				<div style="text-align:center">
@@ -174,7 +196,7 @@
 				</div>
 			</div>
 			
-			<a class="close" href="#">&times;</a> 
+			<a class="close" onclick="pauseVid()" href="#">&times;</a> 
 			<div class="workFullText">
 				<h4 class="workTitle">Metamorphosis</h4>
 				<h5 class="workMedium">3D Animation on filmed footage</h5>
@@ -187,12 +209,12 @@
 	
 	<!--  FLOWER MELT   -->
 	<div id="popup2" class="workFullsize">
-		<a class="workEsc" href="#"></a>
+		<a class="workEsc" onclick="pauseVid()" href="#"></a>
 		<div class="workFullContent">
-			<video class="workVideo" controls>
+			<video class="workVideo" id="vDectrustion" webkit-playsinline playsinline controls>
 				<source src="">
 			</video>
-			<a class="close" href="#">&times;</a> 
+			<a class="close" onclick="pauseVid()" href="#">&times;</a> 
 			<div class="workFullText">
 				<h4 class="workTitle">A Tale of Destruction</h4>
 				<h5 class="workMedium">3D Animation on filmed footage</h5>
@@ -204,12 +226,12 @@
 	
 	<!-- TBD -->
 	<div id="popup3" class="workFullsize">
-		<a class="workEsc" href="#"></a>
+		<a class="workEsc" onclick="pauseVid()" href="#"></a>
 		<div class="workFullContent">
-			<video class="workVideo" controls>
+			<video class="workVideo" id="tbd" webkit-playsinline playsinline controls>
 				<source src="">
 			</video>
-			<a class="close" href="#">&times;</a> 
+			<a class="close" onclick="pauseVid()" href="#">&times;</a> 
 			<div class="workFullText">
 				<h4 class="workTitle">TBD</h4>
 				<h5 class="workMedium">TBD</h5>
@@ -222,7 +244,7 @@
 	<!-- GALLERY -->
 	<!-- LUMEN PRINTS -->
 	<div id="Lumen" class="workFullsize">
-		<a class="workEsc" href="#"></a>
+		<a class="workEsc" onclick="pauseVid()" href="#"></a>
 		<div class="workFullContent">
 			
 			<div class="gallerySpace">
@@ -255,7 +277,7 @@
 				</div>
 			</div>
 			
-			<a class="close" href="#">&times;</a> 
+			<a class="close" onclick="pauseVid()" href="#">&times;</a> 
 			<div class="workFullText">
 				<h4 class="workTitle">Lumen Prints</h4>
 				<h5 class="workMedium">B/W Film Developer</h5>
@@ -267,12 +289,12 @@
 	
 	<!-- TBD Animation? -->
 	<div id="Pandas" class="workFullsize">
-		<a class="workEsc" href="#"></a>
+		<a class="workEsc" onclick="pauseVid()" href="#"></a>
 		<div class="workFullContent">
-			<video class="workVideo" controls>
+			<video class="workVideo" id="vPandas" webkit-playsinline playsinline controls>
 				<source src="docs/assets/workFullsize/PandaAnimation.mp4">
 			</video>
-			<a class="close" href="#">&times;</a> 
+			<a class="close" onclick="pauseVid()" href="#">&times;</a> 
 			<div class="workFullText">
 				<h4 class="workTitle">Panda Cubs</h4>
 				<h5 class="workMedium">2D Animation</h5>
@@ -284,12 +306,12 @@
 	
 	<!-- Flower TBD -->
 	<div id="Timelapse" class="workFullsize">
-		<a class="workEsc" href="#"></a>
+		<a class="workEsc" onclick="pauseVid()" href="#"></a>
 		<div class="workFullContent">
-			<video class="workVideo" controls>
+			<video class="workVideo" id="vTimelapse" webkit-playsinline playsinline controls>
 				<source src="docs/assets/workFullsize/FlowerTimelapse.mp4">
 			</video>
-			<a class="close" href="#">&times;</a> 
+			<a class="close" onclick="pauseVid()" href="#">&times;</a> 
 			<div class="workFullText">
 				<h4 class="workTitle">Flower Timelapse</h4>
 				<h5 class="workMedium">2 week filmed project</h5>
@@ -302,30 +324,38 @@
 	<!-- GALLERY -->
 	<!-- Hypnosis -->
 	<div id="Hypnosis" class="workFullsize">
-		<a class="workEsc" href="#"></a>
+		<a class="workEsc" onclick="pauseVid()" href="#"></a>
 		<div class="workFullContent">
 			
 			<div class="gallerySpace">
 				<div class="gallery-container">
-				<div class="mySlides2">
-				  <video class="galleryVideo" style="width:100%" controls>
-					<source src="docs/assets/workFullsize/FlowerTimelapse.mp4">
-				  </video>
-				</div>
-				<div class="mySlides2">
-				  <img src="docs/assets/workThumbnails/Hypnosis.png" alt="" style="width:100%">
-				</div>
-				<a class="prev" onclick="plusSlides2(-1)">❮</a>
-				<a class="next" onclick="plusSlides2(1)">❯</a>
+					<div class="mySlides2">
+					  <video class="galleryVideo" id="vHypnosis" style="width:100%" webkit-playsinline playsinline controls>
+						<source src="docs/assets/workFullsize/Hypnosis.mp4">
+					  </video>
+					</div>
+					<div class="mySlides2">
+					  <img src="docs/assets/workThumbnails/Hypnosis.png" alt="" style="width:100%">
+					</div>
+					<div class="mySlides2">
+					  <img src="docs/assets/workFullsize/Hypnosis2.png" alt="" style="width:100%">
+					</div>
+					<div class="mySlides2">
+					  <img src="docs/assets/workFullsize/Hypnosis3.png" alt="" style="width:100%">
+					</div>	
+					<a class="prev" onclick="plusSlides2(-1); pauseVid()">❮</a>
+					<a class="next" onclick="plusSlides2(1); pauseVid()">❯</a>
 				</div>
 				<br>
 				<div style="text-align:center">
-				  <span class="dot2" onclick="currentSlide2(1)"></span> 
-				  <span class="dot2" onclick="currentSlide2(2)"></span>	
+					<span class="dot2" onclick="currentSlide2(1)"></span> 
+					<span class="dot2" onclick="currentSlide2(2)"></span>	
+					<span class="dot2" onclick="currentSlide2(3)"></span>	
+					<span class="dot2" onclick="currentSlide2(4)"></span>	
 				</div>
 			</div>
 			
-			<a class="close" href="#">&times;</a> 
+			<a class="close" onclick="pauseVid()" href="#">&times;</a> 
 			<div class="workFullText">
 				<h4 class="workTitle">Hypnosis</h4>
 				<h5 class="workMedium">Filmed Interactive Projection</h5>
@@ -333,15 +363,16 @@
 				<p class="workDes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet. Amet consectetur adipiscing elit pellentesque habitant. </p>
 			</div>
 		</div>
+	</div>
 	
 	<!-- VFX Portal -->
 	<div id="VFXPortal" class="workFullsize">
-		<a class="workEsc" href="#"></a>
+		<a class="workEsc" onclick="pauseVid()" href="#"></a>
 		<div class="workFullContent">
-			<video class="workVideo" controls>
+			<video class="workVideo" id="vPortal" webkit-playsinline playsinline controls>
 				<source src="docs/assets/workFullsize/ThePortal.mp4">
 			</video>
-			<a class="close" href="#">&times;</a> 
+			<a class="close" onclick="pauseVid()" href="#">&times;</a> 
 			<div class="workFullText">
 				<h4 class="workTitle">The Portal</h4>
 				<h5 class="workMedium">VFX Work</h5>
@@ -351,108 +382,228 @@
 		</div>
 	</div>
 	
-	
-	
-	
-	
-	
-	
-	
-<!-- Lumen Print Gallery -->		
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>	
-	
-
-		
-<!-- Hypnosis Gallery -->		
-<script>
-let slideIndex2 = 1;
-showSlides2(slideIndex2);
-
-function plusSlides2(e) {
-  showSlides2(slideIndex2 += e);
-}
-
-function currentSlide2(e) {
-  showSlides2(slideIndex2 = e);
-}
-
-function showSlides2(e) {
-  let j;
-  let slides2 = document.getElementsByClassName("mySlides2");
-  let dots2 = document.getElementsByClassName("dot2");
-  if (e > slides2.length) {slideIndex2 = 1}    
-  if (e < 1) {slideIndex2 = slides2.length}
-  for (j = 0; j < slides2.length; j++) {
-    slides2[j].style.display = "none";  
-  }
-  for (j = 0; j < dots2.length; j++) {
-    dots2[j].className = dots2[j].className.replace(" active", "");
-  }
-  slides2[slideIndex2-1].style.display = "block";  
-  dots2[slideIndex2-1].className += " active";
-}
-</script>
-	
+	<!-- Thumbelina -->
+	<div id="Thumbelina" class="workFullsize">
+		<a onclick="pauseVid()" class="workEsc" href=""></a>
+		<div class="workFullContent">
+			
+			
+			<div class="gallerySpace">
+				<div class="gallery-container">
+				<div class="mySlides4">
+				  <video class="galleryVideo" id="vThumbelina" width="100%" webkit-playsinline playsinline controls>
+						<source src="docs/assets/workFullsize/Thumbelina.mp4">
+				  </video>
+				</div>
+				<div class="mySlides4">
+				  <img src="docs/assets/workFullsize/Thumbelina2.png" alt="" style="width:100%">
+				</div>
+				<div class="mySlides4">
+				  <img src="docs/assets/workFullsize/Thumbelina3.png" alt="" style="width:100%">
+				</div>
+				<div class="mySlides4">
+				  <img src="docs/assets/workFullsize/Thumbelina4.png" alt="" style="width:100%">
+				</div>	
+				<div class="mySlides4">
+				  <img src="docs/assets/workFullsize/Thumbelina5.png" alt="" style="width:100%">
+				</div>
+				<div class="mySlides4">
+				  <img src="docs/assets/workFullsize/Thumbelina6.png" alt="" style="width:100%">
+				</div>
+				<div class="mySlides4">
+				  <img src="docs/assets/workFullsize/Thumbelina7.png" alt="" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides4(-1); pauseVid()">❮</a>
+				<a class="next" onclick="plusSlides4(1); pauseVid()">❯</a>
+				</div>
+				<br>
+				<div style="text-align:center">
+				  <span class="dot4" onclick="currentSlide4(1)"></span> 
+				  <span class="dot4" onclick="currentSlide4(2)"></span> 
+				  <span class="dot4" onclick="currentSlide4(3)"></span> 
+				  <span class="dot4" onclick="currentSlide4(4)"></span> 
+				  <span class="dot4" onclick="currentSlide4(5)"></span> 
+				  <span class="dot4" onclick="currentSlide4(6)"></span> 
+				  <span class="dot4" onclick="currentSlide4(7)"></span> 		
+				</div>
+			</div>
+			
+			<a class="close" onclick="pauseVid()" href="#">&times;</a> 
+			<div class="workFullText">
+				<h4 class="workTitle">Thumbelina</h4>
+				<h5 class="workMedium">3D Animation on filmed footage</h5>
+				<h5 class="workDate">2019</h5>
+			  	<p class="workDes">Thumbelina is the tale of ...</p>
+				
+            </div>
+		</div>  
+	</div>	
 		
 		
-<!-- Metamorphosis Gallery -->		
-<script>
-let slideIndex3 = 1;
-showSlides3(slideIndex3);
-
-function plusSlides3(e) {
-  showSlides3(slideIndex3 += e);
-}
-
-function currentSlide3(e) {
-  showSlides3(slideIndex3 = e);
-}
-
-function showSlides3(e) {
-  let j;
-  let slides3 = document.getElementsByClassName("mySlides3");
-  let dots3 = document.getElementsByClassName("dot3");
-  if (e > slides3.length) {slideIndex3 = 1}    
-  if (e < 1) {slideIndex3 = slides3.length}
-  for (j = 0; j < slides3.length; j++) {
-    slides3[j].style.display = "none";  
-  }
-  for (j = 0; j < dots3.length; j++) {
-    dots3[j].className = dots3[j].className.replace(" active", "");
-  }
-  slides3[slideIndex3-1].style.display = "block";  
-  dots3[slideIndex3-1].className += " active";
-}
-</script>		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	<script>
+		var v1 = document.getElementById("vMetamorphosis"); 
+		var v2 = document.getElementById("vDectrustion");
+		var v3 = document.getElementById("tbd");
+		var v4 = document.getElementById("vPandas");
+		var v5 = document.getElementById("vTimelapse");
+		var v6 = document.getElementById("vHypnosis");
+		var v7 = document.getElementById("vPortal");
+		var v8 = document.getElementById("vThumbelina");
+
+
+		function pauseVid() { 
+		  v1.pause();
+		  v2.pause();
+		  v3.pause();	
+		  v4.pause();		
+		  v5.pause();
+		  v6.pause();	
+		  v7.pause();
+		  v8.pause();
+		} 
+	</script>
+	
+	
+
+
+	<!-- Lumen Print Gallery -->		
+	<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>	
+
+
+
+	<!-- Hypnosis Gallery -->		
+	<script>
+	let slideIndex2 = 1;
+	showSlides2(slideIndex2);
+
+	function plusSlides2(e) {
+	  showSlides2(slideIndex2 += e);
+	}
+
+	function currentSlide2(e) {
+	  showSlides2(slideIndex2 = e);
+	}
+
+	function showSlides2(e) {
+	  let j;
+	  let slides2 = document.getElementsByClassName("mySlides2");
+	  let dots2 = document.getElementsByClassName("dot2");
+	  if (e > slides2.length) {slideIndex2 = 1}    
+	  if (e < 1) {slideIndex2 = slides2.length}
+	  for (j = 0; j < slides2.length; j++) {
+		slides2[j].style.display = "none";  
+	  }
+	  for (j = 0; j < dots2.length; j++) {
+		dots2[j].className = dots2[j].className.replace(" active", "");
+	  }
+	  slides2[slideIndex2-1].style.display = "block";  
+	  dots2[slideIndex2-1].className += " active";
+	}
+	</script>
+
+
+
+	<!-- Metamorphosis Gallery -->		
+	<script>
+	let slideIndex3 = 1;
+	showSlides3(slideIndex3);
+
+	function plusSlides3(e) {
+	  showSlides3(slideIndex3 += e);
+	}
+
+	function currentSlide3(e) {
+	  showSlides3(slideIndex3 = e);
+	}
+
+	function showSlides3(e) {
+	  let j;
+	  let slides3 = document.getElementsByClassName("mySlides3");
+	  let dots3 = document.getElementsByClassName("dot3");
+	  if (e > slides3.length) {slideIndex3 = 1}    
+	  if (e < 1) {slideIndex3 = slides3.length}
+	  for (j = 0; j < slides3.length; j++) {
+		slides3[j].style.display = "none";  
+	  }
+	  for (j = 0; j < dots3.length; j++) {
+		dots3[j].className = dots3[j].className.replace(" active", "");
+	  }
+	  slides3[slideIndex3-1].style.display = "block";  
+	  dots3[slideIndex3-1].className += " active";
+	}
+	</script>		
+
+		
+	<!-- Metamorphosis Gallery -->		
+	<script>
+	let slideIndex4 = 1;
+	showSlides4(slideIndex4);
+
+	function plusSlides4(e) {
+	  showSlides4(slideIndex4 += e);
+	}
+
+	function currentSlide4(e) {
+	  showSlides4(slideIndex4 = e);
+	}
+
+	function showSlides4(e) {
+	  let j;
+	  let slides4 = document.getElementsByClassName("mySlides4");
+	  let dots4 = document.getElementsByClassName("dot4");
+	  if (e > slides4.length) {slideIndex4 = 1}    
+	  if (e < 1) {slideIndex4 = slides4.length}
+	  for (j = 0; j < slides4.length; j++) {
+		slides4[j].style.display = "none";  
+	  }
+	  for (j = 0; j < dots4.length; j++) {
+		dots4[j].className = dots4[j].className.replace(" active", "");
+	  }
+	  slides4[slideIndex4-1].style.display = "block";  
+	  dots4[slideIndex4-1].className += " active";
+	}
+	</script>	
 		
 
 </body>
