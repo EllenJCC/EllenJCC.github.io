@@ -10,15 +10,31 @@
 <link href="StyleTest.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 
+	.dot {
+	  display: none;
+	}
+
+	.fade {
+	  animation-name: fade;
+      animation-timing-function: ease-in-out;
+	  animation-duration: 6s;
+	}
+
+	@keyframes fade {
+		0% {opacity: 0.5}
+		5% {opacity: 1}
+		95% {opacity: 1}
+		100% {opacity: 0.5}
+	}
+	
+	
+	
 </style>
 </head>
 <header class="navBar">
 	<h1><a href="index.html">Home</a></h1>
  	<h1><a href="Work.html">Work</a></h1>
   	<h1><a href="About.html">About</a></h1>
-	<h6 id="mobile">Mobile</h6>
-	<h6 id="tablet">Tablet</h6>
-	<h6 id="laptop">Laptop</h6>
 </header>
 	
 	
@@ -26,20 +42,130 @@
 
 	
 	
-	<div class="frontImage">
+	<div class="homeGallery">
 		
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp1.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp2.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp3.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp4.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp5.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp6.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp7.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp8.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp9.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp10.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp11.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp12.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp13.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp14.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp15.png" alt="">
+		</div>
+		<div class="mySlides fade galleryHome">
+		  <img src="docs/assets/homepage/hp16.png" alt="">
+		</div>
+
+	</div>
+	
+	<div id="nameHeading">
+		<h2>Ellen Cole-Clarke</h2>
+		<h3>Digital Media Artist</h3>
 	</div>
 	
 	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+	
+
+	
+
+
+	
 
 	
 	
 	
+	<div id="showreelHolder">
+		<video id="showreel" src="docs/assets/instagram.mp4" controls></video>
+		<h2>Demo Reel</h2>
+		<h4>test</h4>
+		<h5>test</h5>
+	</div>
 	
 	
 	
+			<script>
+			let slideIndex = 0;
+			showSlides();
 
-	
+			function showSlides() {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 6000); // Change image every 2 seconds
+			}
+			</script>
 
 	
 </body>
