@@ -19,16 +19,8 @@ p {
 	text-align: justify;
 }
 
-/*temp*/
-h6 {
-	font-size: 14px;
-	color: black;
-	display: inline-block;
-}
 
-#laptop {
-	color: white;
-}
+
 
 body {
 	box-sizing: border-box;
@@ -62,7 +54,6 @@ header {
     font-weight: 400;
 	text-transform: uppercase;
 	width:100px;
-	background-color: black;
 	padding: 15px;
 	margin: 0 auto;
 }
@@ -76,8 +67,7 @@ h2 {
 	font-family: 'Varela Round', sans-serif;
     font-size: 36px;
 	font-weight: 200;
-	text-transform: underline;
-	padding: 40px;
+	font-style: italic;
 }
 
 
@@ -87,24 +77,25 @@ h2 {
 	height: 400px;
 	display: block;
 }
-.Showreel {
-	width: 70%;
-	height: 100px;
+
+#showreelHolder {
+	width: 90%;
+	max-width: 920px;
+	height: auto;
+}
+
+#showreel {
+	position: relative;
+	width: 100%;
 	padding: 14px;
-	background: pink;
 }
-.ShowreelHolder {
-  padding-bottom: 56.25%;
-  height: 0;
-  width: 100%;
-}
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
+
+
+
+
+
+
 
 
 #previews {
@@ -130,9 +121,13 @@ iframe {
 	text-align: center;
 	display: inline-block;
 	font-family: 'Varela Round', sans-serif;
-	font-size: 1.4em;
+	font-size: 22px;
 	padding: 8px 0px;
 	text-transform: uppercase;
+}
+.workPreviewTitle h5 {
+	font-size: 16px;
+	color: gray;
 }
 
 
@@ -214,18 +209,14 @@ iframe {
 	text-align: left;
 	padding: 6px 0px;
 }
-.workMedium {
+.workMedium, .workDate {
 	color: grey;
 	text-transform: uppercase;
 	text-align: left;
 	padding-bottom: 6px;
 }
 
-.workDate {
-	color: grey;
-	text-align: left;
-	padding-bottom: 6px;
-}
+
 .workDes {
 	color:black;
 	text-align: left;
@@ -241,12 +232,10 @@ iframe {
 
 
 @media (max-width: 600px){
-	#laptop {
-	color: black;
-}
-	#mobile {
-	color: white;
-}
+	header {
+		background-color: pink;
+	}
+	
 	.workPreview {
 		width: 90%;
 	}
@@ -298,13 +287,9 @@ iframe {
 }
 
 @media (min-width: 601px) and (max-width: 980px){
-	#laptop {
-	color: black;
+	header {
+		background-color: rebeccapurple;
 	}
-	#tablet {
-	color: white;
-	}
-	
 	
 	.workPreview {
 		width: 45%;
@@ -403,7 +388,7 @@ iframe {
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-.dot, .dot2, .dot3 {
+.dot, .dot2, .dot3, .dot4 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -413,7 +398,7 @@ iframe {
   border-radius: 50%;
   display: inline-block;
 }
-.active, .dot:hover, .dot2:hover, .dot3:hover {
+.active, .dot:hover, .dot2:hover, .dot3:hover, .dot3:hover {
   background-color: #636363;
 }
 
