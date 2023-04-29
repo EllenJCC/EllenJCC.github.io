@@ -68,7 +68,6 @@ h2, h3 {
 	font-family: 'Varela Round', sans-serif;
     font-size: 36px;
 	font-weight: 200;
-	font-style: italic;
 }
 
 
@@ -90,6 +89,7 @@ h2, h3 {
 	color: white;
 	background-color: rgba( 0, 0, 0, 0.6);
 	font-size: 30px;
+	font-style: italic;
 	padding: 14px;
 	z-index: 10;
 	text-align: left;
@@ -118,6 +118,49 @@ h2, h3 {
 }
 
 
+#homeLinkBox {
+	width: 90%;
+	max-width: 920px;
+    cursor: pointer;
+}
+
+#homeWorks, #homeAbout {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	padding: 14px;
+	transition: 0.3s;
+}
+#homeWorks:hover, #homeAbout:hover {
+	opacity: 0.7;
+}
+#homeWorks h2 {
+	width: 33%;
+	top: 40%;
+	transform: translateY(40%);
+	display: block;
+	margin: 0;
+}
+
+#homeWorks img, #homeAbout img {
+	width: 33%;
+	margin: 0;
+	padding: 4px;
+}
+
+#homeAboutText {
+	width: 66%;
+	display: inline-block;
+	transform: translateY(20%);
+	text-align: left;
+	padding-right: 14px;
+}
+
+#homeAboutText h2 {
+	text-align: left;
+	padding-bottom: 6px;
+}
 
 
 
@@ -142,6 +185,7 @@ h2, h3 {
   max-height: 1080px;
   width: 100%;
   height: auto;
+  transition: 0.3s;
 }
 .workThumbnail:hover {
 	opacity: 0.7;
@@ -262,9 +306,7 @@ h2, h3 {
 
 
 @media (max-width: 600px){
-	header {
-		background-color: pink;
-	}
+	
 	
 	.workPreview {
 		width: 90%;
@@ -317,9 +359,7 @@ h2, h3 {
 }
 
 @media (min-width: 601px) and (max-width: 980px){
-	header {
-		background-color: rebeccapurple;
-	}
+	
 	
 	.workPreview {
 		width: 45%;
@@ -385,7 +425,7 @@ h2, h3 {
 
 
 
-.mySlides, .mySlides2, .mySlides3 {display: none}
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
 
 /* gallery container */
 .gallery-container {
@@ -418,7 +458,7 @@ h2, h3 {
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-.dot, .dot2, .dot3, .dot4 {
+.dot, .dot2, .dot3, .dot4, .dot5 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -428,7 +468,7 @@ h2, h3 {
   border-radius: 50%;
   display: inline-block;
 }
-.active, .dot:hover, .dot2:hover, .dot3:hover, .dot3:hover {
+.active, .dot:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover {
   background-color: #636363;
 }
 
