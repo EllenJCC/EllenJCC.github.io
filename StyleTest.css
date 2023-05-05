@@ -1,478 +1,53 @@
-@charset "UTF-8";
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<style type="text/css">
+@import url("StyleTest.css");
+</style>
+</head>
+<header class="navBar">
+	<h1><a href="index.html">Home</a></h1>
+ 	<h1><a href="Work.html">Work</a></h1>
+  	<h1><a href="About.html">About</a></h1>
+</header>
 
-
-* {
-	text-align: center;
-	margin: 0 auto;
-	padding: 0px;
-	box-sizing: border-box;
-}
-
-
-
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-p {
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-	text-align: justify;
-}
-
-
-
-
-body {
-	box-sizing: border-box;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0px;
-	background-color: white;
+<body>
 	
-	left: 0;
-	right: 0;
-}
+	<br>
+	<br>
+	
+	<h2>About Me</h2>
+	<br>
+	
+	<div class="about">
+		<p>
+	 	 	My name is Ellen Cole-Clarke and I am a digital media artist from Sydney Australia. I specialise in 3D character modelling and animation as well as abstract film. <br> 
+			<br>
+			I am in my final year of my Media Arts degree at the University of New South Wales for Art and Design and while studying have also had the opportunity to explore more traditional mediums including ceramics, sculpture and darkroom photography.
+		</p>
 
-header {
-	background-color: black;
-    width: 100%;
-	height: auto;
-	padding: 0px;
-	margin: 0 auto;
-	text-align: center;
-	z-index: 10;
-}
-
-
-
-
-.navBar h1 {
-	color: White;
-	display: inline-block;
-	font-family: 'Varela Round', sans-serif;
-    font-size: 1.3em;
-    font-weight: 400;
-	text-transform: uppercase;
-	width:100px;
-	padding: 15px;
-	margin: 0 auto;
-}
-
-.navBar h1:hover {
-	color: white;
-	font-weight: 800;
-}
-
-h2, h3 {
-	font-family: 'Varela Round', sans-serif;
-    font-size: 36px;
-	font-weight: 200;
-}
-
-
-/* Front page specific */
-.homeGallery {
-	background-color: black;
-	height: 500px;
-	display: block;
-}
-
-.homeGallery img{
-	position: relative;
-	width: 100%;
-	object-fit: cover;
-	height: 500px;
-}
-
-#nameHeading {
-	color: white;
-	background-color: rgba( 0, 0, 0, 0.6);
-	font-size: 30px;
-	font-style: italic;
-	padding: 14px;
-	z-index: 10;
-	text-align: left;
-	position: absolute;
-	top: 400px;
-	left: 10%;
-	transform: translateX(-10%);
-}
-
-#nameHeading h3 {
-	font-size: 20px;
-	text-align: left;
-}
-
-
-#showreelHolder {
-	width: 90%;
-	max-width: 920px;
-	height: auto;
-}
-
-#showreel {
-	position: relative;
-	width: 100%;
-	padding: 14px;
-}
-
-
-#homeLinkBox {
-	width: 90%;
-	max-width: 920px;
-    cursor: pointer;
-}
-
-#homeWorks, #homeAbout {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	position: relative;
-	padding: 14px;
-	transition: 0.3s;
-}
-#homeWorks:hover, #homeAbout:hover {
-	opacity: 0.7;
-}
-#homeWorks h2 {
-	width: 33%;
-	top: 40%;
-	transform: translateY(40%);
-	display: block;
-	margin: 0;
-}
-
-#homeWorks img, #homeAbout img {
-	width: 33%;
-	margin: 0;
-	padding: 4px;
-}
-
-#homeAboutText {
-	width: 66%;
-	display: inline-block;
-	transform: translateY(20%);
-	text-align: left;
-	padding-right: 14px;
-}
-
-#homeAboutText h2 {
-	text-align: left;
-	padding-bottom: 6px;
-}
-
-
-
-
-
-
-
-#previews {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-/* Work Previews */
-.workPreview {
-	width: 30%;
-	margin: 10px 10px;	
-    cursor: pointer;
-}
-.workThumbnail {
-  max-width: 1920px;
-  max-height: 1080px;
-  width: 100%;
-  height: auto;
-  transition: 0.3s;
-}
-.workThumbnail:hover {
-	opacity: 0.7;
-}
-.workPreviewTitle {
-	width: 100%;
-	text-align: center;
-	display: inline-block;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 22px;
-	padding: 8px 0px;
-	text-transform: uppercase;
-}
-.workPreviewTitle h5 {
-	font-size: 16px;
-	color: gray;
-}
-
-
-
-
-
-
-
-
-.workFullsize {
-	color: white;
-    background: rgba(0, 0, 0, 0.4);
-	position: fixed;
-	top: 0;
-  	bottom: 0;
-    left: 0;
-    right: 0;
-	visibility: hidden;
-	width: 100%;
-}
-
-.workFullsize:target {
-	visibility: visible;
-}
-
-.workVideo {
-	width: 70%;
-	background-color: antiquewhite;
-	float: left;
-	margin: 14px;
-}
-
-.gallerySpace {
-	width: 70%;
-	text-align: left;
-	float: left;
-	margin: 14px;
-}
-
-
-
-.workFullContent {
-	margin-top: 30px;
-	background-color: white;
-	display: inline-block;
-	width: 95%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateY(-50%) translateX(-50%);
+		<h4>Awards</h4>
+		<p>
+			<b>2017 ATOM Awards Junior Student finalist</b> in the 2D animation category for a 60s work on the Gender pay gap in Australia
+		</p>
+	  <p>
+			<b>2019 Nominated for the InTech showcase</b> of “Outstanding” HSC Industrial technology (Multimedia) Major Projects for my work Thumbelina
+		</p>
+		
+		<h4>Contact</h4>
+		<div class="socials">
+		  <p><b>Email: </b>ellenjcc@outlook.com</p>
+		  <p><b>Phone: </b>0431 134 106</p>
+		  <p><b>Instagram: </b><a href="https://www.instagram.com/ellen.j.cc.art/">@ellen.j.cc.art</a></p>
+			<p><b>LinkedIn: </b><a href="https://www.linkedin.com/in/ellen-cole-clarke-60653018b/">Click</a></p>
+		</div>
+		
+		<img id="ahh" width="100%" src="docs/assets/homepage/h1.png" >
+	</div>
 	
 	
-}
-.workFullText {
-	width: 25%;
-	position: absolute;
-	top: 50%;
-    transform: translateY(-50%) translateX(295%);
-	font-family: 'Varela Round', sans-serif;
-	margin-right: 14px;
-}
-.close {
- 	cursor: pointer;
-	font-size: 28px;
-	font-weight: 800;
-	z-index: 10;
-	color: black;
-	margin-right: 14px;
-	margin-top: 8px;
-	float: right;
-	font-family: 'Varela Round', sans-serif;
-}
-
-
-.workTitle {
-	text-transform: uppercase;
-	color: black;
-	font-size: 1.4em;
-	text-align: left;
-	padding: 6px 0px;
-}
-.workMedium, .workDate {
-	color: grey;
-	text-transform: uppercase;
-	text-align: left;
-	padding-bottom: 6px;
-}
-
-
-.workDes {
-	color:black;
-	text-align: left;
-	font-size: 16px;
-}
-
-.workEsc {
-	width: 100%;
-	height: 100%;
-	display: inline-block;
-}
-
-
-
-@media (max-width: 600px){
 	
-	
-	.workPreview {
-		width: 90%;
-	}
-	
-	
-	.workFullContent {
-		width: 97%;
-	}
-	
-	.workVideo, .gallerySpace {
-		width: 95%;
-		float: none;
-		display: inline-block;
-		text-align: center;
-	}
-	
-	.workFullText {
-		width: 95%;
-		text-align: center;
-		position: relative;
-		display: block;
-		top: 0%;
-		transform: translateY(0%) translateX(0%);
-		font-family: 'Varela Round', sans-serif;
-		margin: 14px;
-		margin-top: -10px;
-	}
-	
-	.workTitle, .workMedium,.workDate, .workDes {
-		text-align: center;
-	}
-	
-	.workMedium, .workDate {
-		display: inline-block;
-	}
-	.close {
-		position: absolute;
-		font-size: 22px;
-		color: white;
-		right: 26px;
-		top: 12px;
-		width: 38px;
-		height: 38px;
-		padding: 8px;
-		margin: 10px 0px;
-	}
-	
-	
-}
-
-@media (min-width: 601px) and (max-width: 980px){
-	
-	
-	.workPreview {
-		width: 45%;
-	}
-	
-	.workVideo, .gallerySpace{
-		width: 95%;
-		float: none;
-		display: inline-block;
-		text-align: center;
-	}
-	
-	.workFullText {
-		width: 95%;
-		text-align: center;
-		position: relative;
-		display: block;
-		top: 0%;
-		transform: translateY(0%) translateX(0%);
-		font-family: 'Varela Round', sans-serif;
-		margin: 14px;
-		margin-top: -10px;
-	}
-	
-	.workTitle, .workMedium,.workDate, .workDes {
-		text-align: center;
-	}
-	
-	.workMedium, .workDate {
-		display: inline-block;
-	}
-	.close {
-		position: absolute;	
-		font-size: 22px;
-		color: white;
-		right: 26px;
-		top: 12px;
-		width: 38px;
-		height: 38px;
-		padding: 8px;
-		margin: 10px 0px;
-	}
-	
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
-
-/* gallery container */
-.gallery-container {
-  width: 100%;
-  position: relative;
-  display: inline-block;
-  margin: auto;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev {
-	left: 0;
-	border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-.dot, .dot2, .dot3, .dot4, .dot5 {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  margin-top: 4px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-.active, .dot:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover {
-  background-color: #636363;
-}
-
-
-
-
-
+</body>
+</html>
