@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 
 * {
 	text-align: center;
@@ -8,6 +11,11 @@
 	box-sizing: border-box;
 }
 
+
+
+video {
+	background-color: #1F1F1F;
+}
 
 
 a {
@@ -50,9 +58,9 @@ header {
 .navBar h1 {
 	color: White;
 	display: inline-block;
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Geologica', sans-serif;
     font-size: 1.3em;
-    font-weight: 400;
+    font-weight: 200;
 	text-transform: uppercase;
 	width:100px;
 	padding: 15px;
@@ -61,11 +69,11 @@ header {
 
 .navBar h1:hover {
 	color: white;
-	font-weight: 800;
+	font-weight: 600;
 }
 
 h2, h3 {
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Geologica', sans-serif;
     font-size: 36px;
 	font-weight: 200;
 }
@@ -137,16 +145,16 @@ h2, h3 {
 }
 #homeWorks h2 {
 	width: 33%;
-	top: 40%;
-	transform: translateY(40%);
 	display: block;
 	margin: 0;
+	min-width: 250px;
 }
 
 #homeWorks img, #homeAbout img {
-	width: 33%;
+	max-width: 380px;
+	width: 25%;
 	margin: 0;
-	padding: 4px;
+	padding: 6px;
 }
 
 #homeAboutText {
@@ -210,18 +218,24 @@ h2, h3 {
 .workThumbnail:hover {
 	opacity: 0.7;
 }
+
 .workPreviewTitle {
 	width: 100%;
 	text-align: center;
 	display: inline-block;
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Geologica', sans-serif;
 	font-size: 22px;
 	padding: 8px 0px;
 	text-transform: uppercase;
 }
+.workPreviewTitle h4 {
+	font-weight: 500;
+}
+
 .workPreviewTitle h5 {
 	font-size: 16px;
 	color: gray;
+	font-weight: 400;
 }
 
 
@@ -280,19 +294,19 @@ h2, h3 {
 	position: absolute;
 	top: 50%;
     transform: translateY(-50%) translateX(295%);
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Geologica', sans-serif;
 	margin-right: 14px;
 }
 .close {
  	cursor: pointer;
 	font-size: 28px;
-	font-weight: 800;
+	font-weight: 600;
 	z-index: 10;
 	color: black;
 	margin-right: 14px;
 	margin-top: 8px;
 	float: right;
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Geologica', sans-serif;
 }
 
 
@@ -302,12 +316,14 @@ h2, h3 {
 	font-size: 1.4em;
 	text-align: left;
 	padding: 6px 0px;
+	font-weight: 500;
 }
 .workMedium, .workDate {
 	color: grey;
 	text-transform: uppercase;
 	text-align: left;
 	padding-bottom: 6px;
+	font-weight: 500;
 }
 
 
@@ -326,6 +342,15 @@ h2, h3 {
 
 
 @media (max-width: 600px){
+	
+	#featuredClear1, #featuredClear2{
+		display: none; 
+	}
+	
+	#homeWorks img {
+		width: 50%;
+		padding: 4px;
+	}
 	
 	
 	.workPreview {
@@ -351,7 +376,7 @@ h2, h3 {
 		display: block;
 		top: 0%;
 		transform: translateY(0%) translateX(0%);
-		font-family: 'Varela Round', sans-serif;
+		font-family: 'Geologica', sans-serif;
 		margin: 14px;
 		margin-top: -10px;
 	}
@@ -381,6 +406,17 @@ h2, h3 {
 @media (min-width: 601px) and (max-width: 980px){
 	
 	
+	#featuredClear1 {
+		display: none; 
+	}
+	
+	#homeWorks img {
+		width: 33%;
+		padding: 6px;
+	}
+	
+	
+	
 	.workPreview {
 		width: 45%;
 	}
@@ -399,7 +435,7 @@ h2, h3 {
 		display: block;
 		top: 0%;
 		transform: translateY(0%) translateX(0%);
-		font-family: 'Varela Round', sans-serif;
+		font-family: 'Geologica', sans-serif;
 		margin: 14px;
 		margin-top: -10px;
 	}
@@ -435,7 +471,7 @@ h2, h3 {
 
 
 
-
+ty
 
 
 
@@ -498,10 +534,10 @@ h2, h3 {
 
 
 .about h4 {
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Geologica', sans-serif;
 	margin-top: 28px;
     font-size: 18px;
-	font-weight: 800;
+	font-weight: 400;
 	position: relative;
 	text-align: left;
 }
