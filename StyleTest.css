@@ -157,14 +157,26 @@ h2, h3 {
 	padding: 6px;
 }
 
-#homeAboutText {
+.homeAboutText {
 	display: inline-block;
 	transform: translateY(20%);
 	text-align: left;
 	padding-right: 14px;
 }
 
-#homeAboutText h2 {
+.homeAboutText h2 {
+	text-align: left;
+	padding-bottom: 6px;
+}
+
+#home {
+	display: inline-block;
+	transform: translateY(20%);
+	text-align: left;
+	padding-right: 14px;
+}
+
+#homeWorks h2 {
 	text-align: left;
 	padding-bottom: 6px;
 }
@@ -555,4 +567,19 @@ ty
 
 #ahh {
 	margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+#backgroundImages img {
+	background-color: white;
+	z-index: -3;
+	position: absolute;
+	
 }
